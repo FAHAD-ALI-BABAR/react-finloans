@@ -101,7 +101,7 @@ const Header = () => {
       </div>
       <div className="container mx-auto px-4">
       <div className="flex flex-wrap items-center justify-center">
-        <div className="lg:w-7/12 md:w-6/12">
+        <div className="mt-60">
           <div className="slider_text">
             <h3 className="text-3xl font-semibold mb-4 animate__animated animate__fadeInRight animate__delay-1s">
               Get Loan for your Business growth or startup
@@ -113,8 +113,8 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-5/12 md:w-6/12">
-          <div className="payment_form bg-white p-8 shadow-lg rounded animate__animated animate__fadeInDown animate__delay-2s">
+        <div className="pay  mt-40 h-72">
+          <div className="payment_form bg-white p-8 shadow-lg rounded animate__animated animate__fadeInDown animate__delay-2s ">
             <div className="info text-center mb-6">
               <h4 className="text-xl font-semibold">How much do you want?</h4>
               <p className="text-gray-600">We provide online instant cash loans with quick</p>
@@ -144,7 +144,7 @@ const Header = () => {
             </div>
             <p className="mb-4">You have to pay: <span className="font-semibold">$0</span></p>
             <div className="submit_btn">
-              <button className="bg-blue-500 text-white px-6 py-3 rounded w-full">
+              <button className="btnn px-6 py-3 rounded w-full">
                 Continue
               </button>
             </div>
