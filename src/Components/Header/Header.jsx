@@ -100,14 +100,14 @@ const Header = () => {
         </div>
       </div>
       <div className="container mx-auto px-4">
-      <div className="flex flex-wrap items-center justify-center">
-        <div className="mt-60">
+      <div className="flex flex-wrap items-center justify-between">
+        <div className="lg:w-4/12 md:w-5/12 mt-56">
           <div className="slider_text">
-            <h3 className="text-3xl font-semibold mb-4 animate__animated animate__fadeInRight animate__delay-1s">
+            <h3 className="text-white text-6xl font-semibold mb-4 animate__animated animate__fadeInRight animate__delay-1s">
               Get Loan for your Business growth or startup
             </h3>
-            <div className="sldier_btn animate__animated animate__fadeInLeft animate__delay-2s">
-              <a href="#" className="bg-blue-500 text-white px-6 py-3 rounded">
+            <div className="sldier_btn animate__animated animate__fadeInLeft animate__delay-2s mt-6">
+              <a href="#" className="color text-white px-6 py-3 rounded ">
                 How it Works
               </a>
             </div>
