@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .service_area{
-    border: 1px solid black;
+ 
     height: 95vh;
 }
 .line{
@@ -26,7 +26,6 @@
     font-size: 16px;
 }
 .cards{
-    border: 1px solid red;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -34,6 +33,7 @@
     gap: 20px;
 }
 .home{
+    border-radius: 5px;
     border: none;
     width: 40vh;
     margin-top: 10px;
@@ -41,16 +41,27 @@
     background: -webkit-linear-gradient(top, #0a8cff 0%, #054680 100%);
 }
 .car{
-    border: 1px solid green;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(top, #0a8cff 0%, #054680 100%);
     width: 40vh;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: none;
 }
 .education{
-    border: 1px solid green;
+    border-radius: 5px;
+    border:none;
     width: 40vh;
     margin-top: 10px;
     margin-bottom: 10px;
+    background: -webkit-linear-gradient(top, #0a8cff 0%, #054680 100%);
+
+}
+.home-head{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
 }
 .home-head img{
     height: 90px;
@@ -67,11 +78,11 @@
 }
 .home-head h2{
     margin-left: 90px;
-    font-size: 23px;
+    font-size: 26px;
     font-family: "Roboto", sans-serif;
     margin-top: 30px;
     font-weight: bold;
-    color: #fff;
+    color: #33d4d6
 }
 .home-info ul{
     list-style-type: disc;
@@ -86,6 +97,10 @@
     color: #33d4d6 /* Replace with your desired color */
 }
 .loan-icon {
-    filter: sepia(100%) hue-rotate(180deg) saturate(1000%);
-    /* Adjust the filter properties to achieve the desired color */
+    filter: invert(100%) brightness(1000%);
 }
+.home-info ul li:hover{
+    cursor: pointer;
+    color: white;
+}
+
