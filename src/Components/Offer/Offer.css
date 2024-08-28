@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.service_area{
+    border: 1px solid black;
+    height: 95vh;
+}
+.line{
+    border: 1px solid #33d4d6;
+    margin-top: 80px;
+    width: 3%;
+    margin-left: 48%;
+    
+}
+.offer-text{
+    text-align: center;
+    margin-top: 10px;
+}
+.offer-text h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 44px;
+    color: black;
+}
+.offer-text p{
+    color: #7a838b;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+.cards{
+    border: 1px solid red;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.home{
+    border: none;
+    width: 40vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(top, #0a8cff 0%, #054680 100%);
+}
+.car{
+    border: 1px solid green;
+    width: 40vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.education{
+    border: 1px solid green;
+    width: 40vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.home-head img{
+    height: 90px;
+    margin-left: 120px;
+    margin-top: 40px;
+    color: #fff;
+}
+.home-head h5{
+    margin-left: 120px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    color: #fff;
+}
+.home-head h2{
+    margin-left: 90px;
+    font-size: 23px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.home-info ul{
+    list-style-type: disc;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif; 
+    line-height: 30px;
+    color: #fff;
+}
+.home-info li::marker {
+    color: #33d4d6 /* Replace with your desired color */
+}
+.loan-icon {
+    filter: sepia(100%) hue-rotate(180deg) saturate(1000%);
+    /* Adjust the filter properties to achieve the desired color */
+}
