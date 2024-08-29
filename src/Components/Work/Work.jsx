@@ -19,7 +19,7 @@ const Work = () => {
           </div>
           <div className='apply'>
           <div className='num'>
-              <h6>01</h6>
+              <h6>02</h6>
             </div>
             <h2>Apply for loan</h2>
             <p>We will customize a loan based on the amount of cash your company need term</p>
@@ -27,7 +27,7 @@ const Work = () => {
           </div>
           <div className='apply'>
           <div className='num'>
-              <h6>01</h6>
+              <h6>03</h6>
             </div>
             <h2>Apply for loan</h2>
             <p>We will customize a loan based on the amount of cash your company need term</p>
