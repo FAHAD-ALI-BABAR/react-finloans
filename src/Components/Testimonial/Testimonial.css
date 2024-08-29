@@ -1,0 +1,33 @@
+.testimonial{
+   
+    height: 40vh;
+    margin-top: 20px;
+}
+.forward{
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #DDF0FF;
+    color: #0A8CFF;
+    text-align: center;
+    line-height: 72px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.backward{
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #DDF0FF;
+    color: #0A8CFF;
+    text-align: center;
+    line-height: 72px;
+    font-size: 16px;
+    font-weight: 500;
+}

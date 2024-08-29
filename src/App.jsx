@@ -5,6 +5,7 @@ import Offer from './Components/Offer/Offer'
 import Choose from './Components/Choose/Choose'
 import Work from './Components/Work/Work'
 import Accordian from './Components/Accordian/Accordian'
+import Testimonial from './Components/Testimonial/Testimonial'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
      <Choose/>
       <Work/>
       <Accordian/>
+      <Testimonial/>
     </>
   )
 }
