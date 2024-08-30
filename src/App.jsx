@@ -6,6 +6,7 @@ import Choose from './Components/Choose/Choose'
 import Work from './Components/Work/Work'
 import Accordian from './Components/Accordian/Accordian'
 import Testimonial from './Components/Testimonial/Testimonial'
+import Apply from './Components/Apply/Apply'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Work/>
       <Accordian/>
       <Testimonial/>
+      <Apply/>
     </>
   )
 }

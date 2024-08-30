@@ -13,7 +13,7 @@ const testimonials = [
       img: author,
     },
     {
-      name: "Mark Johnsonn",
+      name: "Mark Johnson",
       review: "Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.",
       img: author,
     },
