@@ -7,6 +7,8 @@ import Work from './Components/Work/Work'
 import Accordian from './Components/Accordian/Accordian'
 import Testimonial from './Components/Testimonial/Testimonial'
 import Apply from './Components/Apply/Apply'
+import Footer from './Components/Footer/Footer'
+import Header1 from './Components/Header1/Header1'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +22,7 @@ function App() {
       <Accordian/>
       <Testimonial/>
       <Apply/>
+      <Footer/>
     </>
   )
 }
