@@ -44,7 +44,7 @@ const Abouthero = () => {
                         </ul>
                       </li>
                       <li><a href="FAQ.html">FAQ</a></li>
-                      <li><a href="contact.html">Contact</a></li>
+                      <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                   </nav>
                 </div>
