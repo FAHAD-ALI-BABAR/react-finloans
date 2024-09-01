@@ -32,7 +32,7 @@ const Contacthero = () => {
                       <li className="relative group">
                         <a href="#">Pages <i className="ti-angle-down"></i></a>
                         <ul className="submenu absolute left-0 hidden group-hover:block shadow-md">
-                          <li><a href="apply.html">Apply Loan</a></li>
+                        <li><NavLink to="/applyloan">Apply loan</NavLink></li>
                           <li><a href="elements.html">Elements</a></li>
                         </ul>
                       </li>
