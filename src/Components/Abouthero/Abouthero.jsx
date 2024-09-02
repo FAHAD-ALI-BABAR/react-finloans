@@ -3,7 +3,7 @@ import "./Abouthero.css"
 import banner from "../../Images/aboutban.webp"
 import logo1 from "../../Images/logo.webp"
 import {NavLink} from "react-router-dom"
-const Abouthero = () => {
+const Abouthero = (props) => {
     const toggleMenu = () => {
         const menu = document.querySelector('.slicknav_nav');
         menu.classList.toggle('hidden');}
@@ -33,7 +33,7 @@ const Abouthero = () => {
                         <a href="#">Pages <i className="ti-angle-down"></i></a>
                         <ul className="submenu absolute left-0 hidden group-hover:block shadow-md">
                         <li><NavLink to="/applyloan">Apply loan</NavLink></li>
-                          <li><a href="elements.html">Elements</a></li>
+                        <li><NavLink to="/element">Elements</NavLink></li>
                         </ul>
                       </li>
                       <li className="relative group">
@@ -98,7 +98,7 @@ const Abouthero = () => {
               </div>
             </div>
             <div className="text-start mt-40 ml-52 ">
-                <h1 className="text-white text-6xl font-bold">About Us</h1>
+                <h1 className="text-white text-6xl font-bold">{props.name}</h1>
               </div>
           </div>
         </div>

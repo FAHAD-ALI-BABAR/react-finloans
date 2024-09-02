@@ -7,7 +7,7 @@ import Footer from '../Components/Footer/Footer'
 const Applyloan = () => {
   return (
     <>
-    <Abouthero/>
+    <Abouthero name={"Apply Loan"}/>
     <Loanform/>
     <Work/>
     <Footer/>

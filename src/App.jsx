@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Applyloan from './Pages/Applyloan'
+import Elements from './Pages/Elements'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/applyloan' element={<Applyloan/>}/>
+      <Route path='/element' element={<Elements/>}/>
     </Routes>
      
     </>

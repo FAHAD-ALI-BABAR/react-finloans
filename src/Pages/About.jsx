@@ -9,7 +9,7 @@ import Footer from '../Components/Footer/Footer'
 const About = () => {
   return (
     <>
-    <Abouthero/>
+    <Abouthero name={"About"}/>
     <Choose/>
     <Work/>
     <Accordian/>

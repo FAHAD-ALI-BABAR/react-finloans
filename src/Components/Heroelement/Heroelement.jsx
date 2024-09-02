@@ -1,16 +1,14 @@
 import React from 'react'
-import contactban from "../../Images/contactban.webp"
-import logo2 from "../../Images/logo.webp"
-import {NavLink} from "react-router-dom"
-import "./Contacthero.css"
-const Contacthero = () => {
+import bannerr from "../../Images/aboutban.webp"
+import logo0 from "../../Images/logo.webp"
+const Heroelement = (props) => {
     const toggleMenu = () => {
         const menu = document.querySelector('.slicknav_nav');
         menu.classList.toggle('hidden');}
   return (
     <>
     <div className='overlay-about'></div>
-    <div className="header-area border border-black h-[55vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${contactban})` }}>
+    <div className="header-area border border-black h-[55vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${bannerr})` }}>
       <div id="sticky-header" className="main-header-area">
         <div className="container-fluid">
           <div className="header-bottom-border pt-5">
@@ -18,7 +16,7 @@ const Contacthero = () => {
               <div className="col-xl-3 col-lg-2">
                 <div className="logo">
                   <a href="index.html">
-                    <img src={logo2} alt="Logo" />
+                    <img src={logo0} alt="Logo" />
                   </a>
                 </div>
               </div>
@@ -33,7 +31,7 @@ const Contacthero = () => {
                         <a href="#">Pages <i className="ti-angle-down"></i></a>
                         <ul className="submenu absolute left-0 hidden group-hover:block shadow-md">
                         <li><NavLink to="/applyloan">Apply loan</NavLink></li>
-                        <li><NavLink to="/element">Elements</NavLink></li>
+                          <li><a href="elements.html">Elements</a></li>
                         </ul>
                       </li>
                       <li className="relative group">
@@ -98,7 +96,7 @@ const Contacthero = () => {
               </div>
             </div>
             <div className="text-start mt-40 ml-52 ">
-                <h1 className="text-white text-6xl font-bold">Contact Us</h1>
+                <h1 className="text-white text-6xl font-bold"></h1>
               </div>
           </div>
         </div>
@@ -106,9 +104,8 @@ const Contacthero = () => {
       
       
     </div>
-
     </>
   )
 }
 
-export default Contacthero
+export default Heroelement

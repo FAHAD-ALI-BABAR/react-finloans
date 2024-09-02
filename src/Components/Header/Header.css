@@ -10,6 +10,8 @@
   font-style: normal;
     
 }
+/* Ensure the submenu is hidden by default */
+
 .color{
     background-color: #33d4d6;
 }
@@ -51,6 +53,9 @@ li:hover{
   .header-area > *:not(.overlay) {
     position: relative;
     z-index: 2;
+  }
+  .main-menu, .appointment {
+    display: flex;
   }
   /* 7a838b */
   
