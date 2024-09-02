@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.def{
+    font-family: "Roboto", sans-serif;
+    color: #415094;
+    background-color: #f9f9ff;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.deff{
+    font-family: "Roboto", sans-serif;
+    color: #1f1f1f;
+    background-color: #ffffff;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    font-size: 12.8px;
+
+}
+.dis{
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: #f9f9ff;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.or{
+    font-family: "Roboto", sans-serif;
+    color:#fff;
+    background-color: #ff5e13;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.orr{
+    font-family: "Roboto", sans-serif;
+    color:#ff5e13;
+    border: 1px solid #ff5e13;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.sk{
+    font-family: "Roboto", sans-serif;
+    color:#fff;
+    background-color: #4cd3e3;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.skk{
+    font-family: "Roboto", sans-serif;
+    color:#4cd3e3;
+    border: 1px solid #4cd3e3;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.bl{
+    font-family: "Roboto", sans-serif;
+    color:#fff;
+    background-color: #38a4ff;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.bll{
+    font-family: "Roboto", sans-serif;
+    color:#38a4ff;
+    border:1px solid #38a4ff;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.yel{
+    font-family: "Roboto", sans-serif;
+    color:#fff;
+    background-color: #f4e700;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.yell{
+    font-family: "Roboto", sans-serif;
+    color:#f4e700;
+    border:1px solid #f4e700;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.re{
+    font-family: "Roboto", sans-serif;
+    color:#fff;
+    background-color: #f44a40;
+    padding: 10px;
+    font-size: 12.8px;
+}
+.ree{
+    font-family: "Roboto", sans-serif;
+    color:#f44a40;
+    border:1px solid #f44a40;
+    padding: 10px;
+    font-size: 12.8px;
+}
