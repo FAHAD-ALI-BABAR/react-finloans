@@ -42,8 +42,8 @@ const Header = () => {
                       <li className="relative group">
                         <a href="#">Blog <i className="ti-angle-down"></i></a>
                         <ul className="submenu absolute left-0 hidden group-hover:block shadow-md">
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="single-blog.html">Single Blog</a></li>
+                        <li><NavLink to="/blogs">Blog</NavLink></li>
+                        <li><NavLink to="/singleblog">Single blog</NavLink></li>
                         </ul>
                       </li>
                       <li><a href="FAQ.html">FAQ</a></li>

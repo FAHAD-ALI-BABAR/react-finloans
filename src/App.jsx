@@ -6,6 +6,8 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Applyloan from './Pages/Applyloan'
 import Elements from './Pages/Elements'
+import Blog from './Pages/Blog'
+import Blogelement from './Pages/Blogelement'
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/applyloan' element={<Applyloan/>}/>
       <Route path='/element' element={<Elements/>}/>
+      <Route path='/blogs' element={<Blog/>}/>
+      <Route path='/singleblog' element={<Blogelement/>}/>
     </Routes>
      
     </>
