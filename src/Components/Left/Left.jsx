@@ -191,18 +191,18 @@ const Left = () => {
     <div className="border-b pb-4">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/3">
-          <h3 className="mb-8">Image Gallery</h3>
+          <h3 className="mb-8 font-bold text-lg">Image Gallery</h3>
           <div>
-            <h1>This is header 01</h1>
-            <h2>This is header 02</h2>
-            <h3>This is header 03</h3>
-            <h4>This is header 04</h4>
-            <h5>This is header 05</h5>
-            <h6>This is header 06</h6>
+            <h1 className='text-5xl font-bold text-gray-600'>This is header 01</h1>
+            <h2 className='text-4xl font-bold text-gray-600'>This is header 02</h2>
+            <h3 className='text-3xl font-bold text-gray-600'>This is header 03</h3>
+            <h4 className='text-2xl font-bold text-gray-600'>This is header 04</h4>
+            <h5 className='text-xl font-bold text-gray-600'>This is header 05</h5>
+            <h6 className='text-lg font-bold text-gray-600'>This is header 06</h6>
           </div>
         </div>
-        <div className="w-full md:w-1/3 mt-4 md:mt-0">
-          <h3 className="mb-8">Unordered List</h3>
+        <div className="w-full md:w-1/3 mt-4 md:mt-0 pointer-events-none">
+          <h3 className="mb-8 font-bold text-lg">Ordered List</h3>
           <ul className="list-disc list-inside">
             <li>Fta Keys</li>
             <li>For Women Only Your Computer Usage</li>
@@ -212,15 +212,25 @@ const Left = () => {
             <li>Cleaning And Organizing Your Computer</li>
           </ul>
         </div>
-        <div className="w-full md:w-1/3 mt-4 md:mt-0">
-          <h3 className="mb-8">Ordered List</h3>
-          <ul className="list-disc list-inside">
-            <li>Fta Keys</li>
-            <li>For Women Only Your Computer Usage</li>
-            <li>Facts About Hypnosis</li>
-            <li>Dealing With Technical Support 10 Useful Tips</li>
-            <li>Make Myspace Your Best Designed Space</li>
-            <li>Cleaning And Organizing Your Computer</li>
+        <div className="w-full md:w-1/3 mt-4 md:mt-0 pointer-events-none">
+          <h3 className="mb-8 font-bold text-lg">Unrdered List</h3>
+          <ul className="custom-list">
+            <li className="mb-2">Fta Keys</li>
+            <li className="mb-2">For Women Only Your Computer Usage</li>
+            <li className="mb-2">Facts About Hypnosis
+                <ul className="custom-list">
+                    <li className="mb-2">Addiction When Gambling Becomes
+                        <ul className="custom-list">
+                            <li className="mb-2">
+                            Protective Preventative Maintenance
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li className="mb-2">Dealing With Technical Support 10 Useful Tips</li>
+            <li className="mb-2">Make Myspace Your Best Designed Space</li>
+            <li className="mb-2">Cleaning And Organizing Your Computer</li>
           </ul>
         </div>
       </div>
@@ -230,41 +240,8 @@ const Left = () => {
        
       
 
-    <div className="pb-4">
-      <h3 className="mb-8">Text Alignment</h3>
-      <div>
-        <p className="text-left mb-4">
-          Left Aligned Text – Recently, the US Federal government banned online casinos from
-          operating in America by making it illegal to transfer money to them through any US bank
-          or payment system. As a result of this law, most of the popular online casino networks
-          such as Party Gaming and PlayTech left the United States. Overnight, online casino players
-          found themselves being chased by the Federal government.
-        </p>
-        <p className="text-center mb-4">
-          Center Aligned Text – Recently, the US Federal government banned online casinos from
-          operating in America by making it illegal to transfer money to them through any US bank
-          or payment system. As a result of this law, most of the popular online casino networks
-          such as Party Gaming and PlayTech left the United States. Overnight, online casino players
-          found themselves being chased by the Federal government.
-        </p>
-        <p className="text-right mb-4">
-          Right Aligned Text – Recently, the US Federal government banned online casinos from
-          operating in America by making it illegal to transfer money to them through any US bank
-          or payment system. As a result of this law, most of the popular online casino networks
-          such as Party Gaming and PlayTech left the United States. Overnight, online casino players
-          found themselves being chased by the Federal government.
-        </p>
-        <p className="text-justify">
-          Justify Aligned Text – Recently, the US Federal government banned online casinos from
-          operating in America by making it illegal to transfer money to them through any US bank
-          or payment system. As a result of this law, most of the popular online casino networks
-          such as Party Gaming and PlayTech left the United States. Overnight, online casino players
-          found themselves being chased by the Federal government.
-        </p>
-      </div>
     </div>
-  </div>
-</div>
+    </div>
 
     </>
   )
