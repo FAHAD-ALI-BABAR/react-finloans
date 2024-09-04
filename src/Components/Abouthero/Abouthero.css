@@ -10,6 +10,16 @@
   font-style: normal;
     
 }
+/* Ensure the submenu is hidden by default */
+.slicknav_nav .submenu {
+  display: none;
+}
+
+/* Show the submenu when it's not hidden */
+.slicknav_nav .submenu:not(.hidden) {
+  display: block;
+}
+
 .color{
     background-color: #33d4d6;
 }
@@ -35,6 +45,7 @@ li:hover{
 }
 .header-area {
     position: relative;
+    
   }
   
  .overlay-about {
