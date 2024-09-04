@@ -6,7 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 const Form = () => {
   return (
     <>
-     <div className="flex flex-wrap ml-52 mt-16">
+     <div className="flex justify-start flex-wrap ml-52 mt-16">
       <div className="w-3/4">
         <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
       </div>
@@ -80,12 +80,12 @@ const Form = () => {
         </form>
       </div>
       <div className="w-full lg:w-1/3 mt-10 lg:mt-0">
-        <div className="flex items-start space-x-4 mb-6">
+        <div className="flex items-start space-x-4 mb-6 flex-wrap">
           <span className="text-indigo-600">
             <i className="ti-home text-xl"></i>
           </span>
           <div className=" w-60 p-4">
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 flex-wrap">
         <IoHomeOutline className="text-gray-800 text-xl " />
         <h3 className="text-gray-800 font-semibold">Buttonwood, California.</h3>
       </div>
