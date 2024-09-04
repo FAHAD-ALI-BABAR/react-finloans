@@ -81,30 +81,30 @@ const Abouthero = (props) => {
               </div>
 
               {/* Mobile Menu */}
-              <div className={`${menuOpen ? 'block' : 'hidden'} lg:hidden mt-4 bg-gray-600 text-black p-4`}>
-                <NavLink to="/" className="block px-4 py-2 border-b hover:bg-gray-100" onClick={toggleMenu}>Home</NavLink>
-                <NavLink to="/loan" className="block px-4 py-2 border-b hover:bg-gray-100" onClick={toggleMenu}>Loan</NavLink>
-                <NavLink to="/about" className="block px-4 py-2 border-b hover:bg-gray-100" onClick={toggleMenu}>About</NavLink>
+              <div className={`${menuOpen ? 'block' : 'hidden'} lg:hidden mt-4 bg-gray-600 text-black p-4 `}>
+                <NavLink to="/" className="block px-4 py-1 border-b hover:bg-gray-100" onClick={toggleMenu}>Home</NavLink>
+                <NavLink to="/loan" className="block px-4 py-1 border-b hover:bg-gray-100" onClick={toggleMenu}>Loan</NavLink>
+                <NavLink to="/about" className="block px-4 py-1 border-b hover:bg-gray-100" onClick={toggleMenu}>About</NavLink>
                 <div className="relative">
                   <button className="w-full text-left px-4 py-2 border-b hover:bg-gray-100">
                     Pages
                   </button>
                   <ul className="pl-4">
-                    <li><NavLink to="/applyloan" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Apply loan</NavLink></li>
-                    <li><NavLink to="/element" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Elements</NavLink></li>
+                    <li><NavLink to="/applyloan" className="block px-4 py-1 hover:bg-gray-100" onClick={toggleMenu}>Apply loan</NavLink></li>
+                    <li><NavLink to="/element" className="block px-4 py-1 hover:bg-gray-100" onClick={toggleMenu}>Elements</NavLink></li>
                   </ul>
                 </div>
                 <div className="relative">
-                  <button className="w-full text-left px-4 py-2 border-b hover:bg-gray-100">
+                  <button className="w-full text-left px-4 py-1 border-b hover:bg-gray-100">
                     Blog
                   </button>
                   <ul className="pl-4">
-                    <li><NavLink to="/blogs" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Blog</NavLink></li>
-                    <li><NavLink to="/singleblog" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Single blog</NavLink></li>
+                    <li><NavLink to="/blogs" className="block px-4 py-1 hover:bg-gray-100" onClick={toggleMenu}>Blog</NavLink></li>
+                    <li><NavLink to="/singleblog" className="block px-4 py-1 hover:bg-gray-100" onClick={toggleMenu}>Single blog</NavLink></li>
                   </ul>
                 </div>
-                <NavLink to="/FAQ" className="block px-4 py-2 border-b hover:bg-gray-100" onClick={toggleMenu}>FAQ</NavLink>
-                <NavLink to="/contact" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Contact</NavLink>
+                <NavLink to="/FAQ" className="block px-4 py-1 border-b hover:bg-gray-100" onClick={toggleMenu}>FAQ</NavLink>
+                <NavLink to="/contact" className="block px-4 py-1 hover:bg-gray-100" onClick={toggleMenu}>Contact</NavLink>
               </div>
 
               {/* Hero Section */}

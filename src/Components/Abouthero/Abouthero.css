@@ -58,6 +58,16 @@ li:hover{
     opacity: 0.8; /* Blue overlay with 50% opacity */
     z-index: 1;
   }
+  .overlay-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    background-color: #1a1a37;
+    opacity: 0.8; /* Blue overlay with 50% opacity */
+    z-index: 1;
+  }
   
   .header-area > *:not(.overlay) {
     position: relative;

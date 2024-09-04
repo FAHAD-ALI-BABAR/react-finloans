@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
 import logo from "../../Images/logo.webp";
 import bg from "../../Images/pexel.webp";
@@ -9,48 +9,47 @@ const Header = () => {
     const menu = document.querySelector('.slicknav_nav');
     menu.classList.toggle('hidden');
   };
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenubar = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <>
       <div className='overlay-head'></div>
-      <div className="header-area border border-black h-[95vh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
+      <div className='header-area border h-[95vh] border-black bg-no-repeat bg-cover bg-center' style={{ backgroundImage: `url(${bg})` }}>
         <div id="sticky-header" className="main-header-area">
           <div className="container-fluid">
             <div className="header-bottom-border pt-5">
-              <div className="row flex justify-around">
-                <div className="col-xl-3 col-lg-2">
+              <div className="flex flex-wrap justify-between items-center">
+                <div className=" lg:w-1/4 text-center lg:text-left">
                   <div className="logo">
                     <NavLink to="/">
-                      <img src={logo} alt="Logo" />
+                      <img src={logo} alt="Logo" className="mx-auto lg:mx-0" />
                     </NavLink>
                   </div>
                 </div>
-                <div className="col-xl-6 col-lg-7">
-                  <div className="main-menu hidden lg:flex">
-                  <nav>
-                    <ul id="navigation" className="flex justify-center space-x-4 pt-3 text-white">
-                    <li><NavLink to="/">Home</NavLink></li>
-                      <li><NavLink to="/loan">Loan</NavLink></li>
-                      <li><NavLink to="/about">About</NavLink></li>
-                      <li className="relative group">
-                        <a href="#">Pages <i className="ti-angle-down"></i></a>
-                        <ul className="submenu absolute left-0 hidden group-hover:block shadow-md">
-                        <li><NavLink to="/applyloan">Apply loan</NavLink></li>
-                        <li><NavLink to="/element">Elements</NavLink></li>
-                        </ul>
-                      </li>
-                      <li className="relative group">
-                        <a href="#">Blog <i className="ti-angle-down"></i></a>
-                        <ul className="submenu absolute left-0 hidden group-hover:block shadow-md">
-                        <li><NavLink to="/blogs">Blog</NavLink></li>
-                        <li><NavLink to="/singleblog">Single blog</NavLink></li>
-                        </ul>
-                      </li>
-                      <li><a href="FAQ.html">FAQ</a></li>
-                      <li><NavLink to="/contact">Contact</NavLink></li>
+                <div className="hidden lg:flex space-x-4 text-white">
+                  <NavLink to="/" className="hover:text-gray-400">Home</NavLink>
+                  <NavLink to="/loan" className="hover:text-gray-400">Loan</NavLink>
+                  <NavLink to="/about" className="hover:text-gray-400">About</NavLink>
+                  <div className="relative group">
+                    <a href="#" className="hover:text-gray-400">Pages</a>
+                    <ul className="submenu absolute left-0 hidden group-hover:block bg-white text-black p-2 shadow-md">
+                      <li><NavLink to="/applyloan" className="block px-4 py-2 hover:bg-gray-100">Apply loan</NavLink></li>
+                      <li><NavLink to="/element" className="block px-4 py-2 hover:bg-gray-100">Elements</NavLink></li>
                     </ul>
-                  </nav>
                   </div>
+                  <div className="relative group">
+                    <a href="#" className="hover:text-gray-400">Blog</a>
+                    <ul className="submenu absolute left-0 hidden group-hover:block bg-white text-black p-2 shadow-md">
+                      <li><NavLink to="/blogs" className="block px-4 py-2 hover:bg-gray-100">Blog</NavLink></li>
+                      <li><NavLink to="/singleblog" className="block px-4 py-2 hover:bg-gray-100">Single blog</NavLink></li>
+                    </ul>
+                  </div>
+                  <NavLink to="/FAQ" className="hover:text-gray-400">FAQ</NavLink>
+                  <NavLink to="/contact" className="hover:text-gray-400">Contact</NavLink>
                 </div>
                 <div className="col-xl-3 col-lg-3 hidden lg:flex">
                   <div className="appointment flex items-center justify-end">
@@ -66,48 +65,56 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 lg:hidden">
-                  <div className="mobile-menu">
-                    <a href="#" className="slicknav_btn" onClick={toggleMenu}>
-                      <span className="slicknav_menutxt">MENU</span>
-                      <span className="slicknav_icon">
-                        <span className="slicknav_icon-bar"></span>
-                        <span className="slicknav_icon-bar"></span>
-                        <span className="slicknav_icon-bar"></span>
-                      </span>
-                    </a>
-                    <ul className="slicknav_nav hidden">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="Loan.html">Loan</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li className="relative">
-                        <a href="#">Pages <i className="ti-angle-down"></i></a>
-                        <ul className="submenu hidden">
-                          <li><a href="apply.html">Apply Loan</a></li>
-                          <li><a href="elements.html">Elements</a></li>
-                        </ul>
-                      </li>
-                      <li className="relative">
-                        <a href="#">Blog <i className="ti-angle-down"></i></a>
-                        <ul className="submenu hidden">
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="single-blog.html">Single Blog</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="FAQ.html">FAQ</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </div>
+                <div className="lg:hidden">
+                  <button
+                    onClick={toggleMenubar}
+                    className="text-white focus:outline-none"
+                  >
+                    <span className="sr-only">Open main menu</span>
+                    <div className="hamburger-icon">
+                      <div className="w-6 h-0.5 bg-white mb-1"></div>
+                      <div className="w-6 h-0.5 bg-white mb-1"></div>
+                      <div className="w-6 h-0.5 bg-white"></div>
+                    </div>
+                  </button>
                 </div>
               </div>
+
+              {/* Mobile Menu */}
+              <div className={`${menuOpen ? 'block' : 'hidden'} lg:hidden mt-4 bg-gray-600 text-black p-4 `}>
+                <NavLink to="/" className="block px-4 py-2 border-b hover:bg-gray-100" onClick={toggleMenu}>Home</NavLink>
+                <NavLink to="/loan" className="block px-4 py-2 border-b hover:bg-gray-100" onClick={toggleMenu}>Loan</NavLink>
+                <NavLink to="/about" className="block px-4 py-2 border-b hover:bg-gray-100" onClick={toggleMenu}>About</NavLink>
+                <div className="relative">
+                  <button className="w-full text-left px-4 py-2 border-b hover:bg-gray-100">
+                    Pages
+                  </button>
+                  <ul className="pl-4">
+                    <li><NavLink to="/applyloan" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Apply loan</NavLink></li>
+                    <li><NavLink to="/element" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Elements</NavLink></li>
+                  </ul>
+                </div>
+                <div className="relative">
+                  <button className="w-full text-left px-4 py-2 border-b hover:bg-gray-100">
+                    Blog
+                  </button>
+                  <ul className="pl-4">
+                    <li><NavLink to="/blogs" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Blog</NavLink></li>
+                    <li><NavLink to="/singleblog" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Single blog</NavLink></li>
+                  </ul>
+                </div>
+                <NavLink to="/FAQ" className="block px-4 py-2 border-b hover:bg-gray-100" onClick={toggleMenu}>FAQ</NavLink>
+                <NavLink to="/contact" className="block px-4 py-2 hover:bg-gray-100" onClick={toggleMenu}>Contact</NavLink>
+              </div>
+              </div>
             </div>
-          </div>
+          
         </div>
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center justify-between">
-            <div className="lg:w-4/12 md:w-5/12 mt-56">
+            <div className="w-full lg:w-5/12 mt-16 lg:mt-56">
               <div className="slider_text">
-                <h3 className="text-white text-6xl font-semibold mb-4 animate__animated animate__fadeInRight animate__delay-1s">
+                <h3 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 animate__animated animate__fadeInRight animate__delay-1s">
                   Get Loan for your Business growth or startup
                 </h3>
                 <div className="sldier_btn animate__animated animate__fadeInLeft animate__delay-2s mt-6">
@@ -117,7 +124,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="pay mt-40 h-72">
+            <div className="w-full lg:w-5/12 mt-16 lg:mt-40 h-72">
               <div className="payment_form bg-white p-8 shadow-lg rounded animate__animated animate__fadeInDown animate__delay-2s">
                 <div className="info text-center mb-6">
                   <h4 className="text-xl font-semibold">How much do you want?</h4>
